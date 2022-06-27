@@ -1,0 +1,19 @@
+<div class="flex w-full border-2 border-black">
+  <div class="w-60 flex-none border-r-2 border-black">
+    <div class="border-b-2 border-black">
+      <turbo-frame id="new_room">
+        <%= link_to "New Room", new_room_path, class: "bg-slate-300 block p-3" %>
+      </turbo-frame>
+    </div>
+    <div>
+      <ul id="rooms">
+        <%= render @rooms %>
+      </ul>
+    </div>
+  </div>
+  <div class="flex-auto">
+    <turbo-frame id="messages_window">
+      <div class="p-3 h-full place-items-center">Empty</div>
+    </turbo-frame>
+  </div>
+</div>

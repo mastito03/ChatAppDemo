@@ -1,0 +1,13 @@
+<div class="border-2 w-full border-black">
+  <turbo-frame id="messages_window">
+    <div class="flex flex-col h-full">
+      <div class="p-3 border-b-2 border-black flex-none">
+        Room: [#<%= @room.subject %>-<%= @room.id %>]
+      </div>
+      <div id="messages" class="p-3 grow">
+        <%= render @messages %>
+      </div>
+      <%= render "new_message_form" %>
+    </div>
+  </turbo-frame>
+</div>

@@ -1,0 +1,10 @@
+<div>
+  <turbo-frame id="new_room">
+    <%= form_for @room do |form| %>
+      <div class="flex">
+        <%= form.text_field :subject, class: "block border-0 grow" %>
+        <%= form.submit "Add", class: "block bg-slate-300 p-2" %>
+      </div>
+    <% end %>
+  </turbo-frame>
+</div>
