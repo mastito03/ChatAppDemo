@@ -1,1 +1,5 @@
-<%= room.subject %>
+<li id="<%= dom_id room %>">
+  <%= link_to room_messages_path(room), class: "block py-2 px-3 hover:bg-slate-300", data: { turbo_frame: "messages_window" } do %>
+    #[<%= room.subject %>-<%= room.id %>]
+  <% end %>
+</li>

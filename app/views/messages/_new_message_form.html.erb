@@ -1,0 +1,8 @@
+<div class="border-t-2 border-black flex-none">
+  <turbo-frame id="new_message">
+    <%= form_with model: @message, url: room_messages_path, class: "flex" do |form| %>
+      <%= form.text_area :body, class: "grow border-0 p-1"%>
+      <%= form.submit "Send", class: "p-2 bg-slate-300" %>
+    <% end %>
+  </turbo-frame>
+</div>

@@ -1,0 +1,10 @@
+<div class="flex my-2">
+  <div class="mr-3 rounded-sm">
+    <img src="https://i.pravatar.cc/40?u=<%= message.user.id %>" alt="Avatar">
+  </div>
+  <div>
+    <h4><%= message.user.username %></h4>
+    <sup><%= message.created_at %></sup>
+    <p><%= message.body %></p>
+  </div>
+</div>
